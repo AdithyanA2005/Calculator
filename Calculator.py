@@ -11,7 +11,12 @@ def click(event):
         if  st_value.get().isdigit():
             value = int(st_value.get())
         else:
-            value = eval(screen.get())
+            try:
+                value = eval(screen.get())
+            except Exception as e:
+                print(e)
+                value="error"
+
 
         st_value.set(value)
         screen.update()
@@ -37,11 +42,11 @@ window.background="#000"
 
 st_value = StringVar()
 st_value.set("")
-screen = Entry(window, textvar=st_value, font="lucida 40 bold")
+screen = Entry(window, textvar=st_value, bg="#38c7b9", fg="#032d30", font="lucida 40 bold")
 screen.pack(fill=X, ipadx=8, pady=10, padx=10)
 
 # Adding a frame creating three butttons
-frame1 = Frame(window, background="#3b403e")
+frame1 = Frame(window, background="#2f524e")
 
 button = Button(frame1, text="9", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
@@ -61,7 +66,7 @@ button.bind("<Button-1>", click)
 
 
 frame1.pack()
-frame1 = Frame(window, background="#3b403e")
+frame1 = Frame(window, background="#2f524e")
 
 
 button = Button(frame1, text="6", padx=14, pady=9, font="lucida 35 bold")
@@ -82,7 +87,7 @@ button.bind("<Button-1>", click)
 
 
 frame1.pack()
-frame1 = Frame(window, background="#3b403e")
+frame1 = Frame(window, background="#2f524e")
 
 
 button = Button(frame1, text="3", padx=14, pady=9, font="lucida 35 bold")
@@ -103,7 +108,7 @@ button.bind("<Button-1>", click)
 
 
 frame1.pack()
-frame1 = Frame(window, background="#3b403e")
+frame1 = Frame(window, background="#2f524e")
 
 
 button = Button(frame1, text=".", padx=21, pady=10, font="lucida 35 bold")
@@ -124,7 +129,7 @@ button.bind("<Button-1>", click)
 
 
 frame1.pack()
-frame1 = Frame(window, background="#3b403e")
+frame1 = Frame(window, background="#2f524e")
 
 
 button = Button(frame1, text="/", padx=14, pady=9, font="lucida 35 bold")
@@ -136,6 +141,6 @@ button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
 frame1.pack()
-window.configure(bg="#000")
+window.configure(bg="#2f524e")
 window.mainloop()
 print("hai")
