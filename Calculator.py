@@ -76,7 +76,7 @@ button = Button(frame1, text="4", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="=", padx=14, pady=5, font="lucida 35 bold")
+button = Button(frame1, text="=", padx=14, pady=, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=2)
 button.bind("<Button-1>", click)
 
