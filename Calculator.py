@@ -27,7 +27,7 @@ def click(event):
 # Create window and adding title and icon
 
 window = Tk()
-window.geometry("322x450")
+window.geometry("320x450")
 window.title("ProditorNitro")
 window.background="#000"
 # window.wm_iconbitmap("")
@@ -55,7 +55,7 @@ button = Button(frame1, text="7", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="C", padx=14, pady=9, font="lucida 35 bold")
+button = Button(frame1, text="AC", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
@@ -76,7 +76,7 @@ button = Button(frame1, text="4", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="=", padx=14, pady=, font="lucida 35 bold")
+button = Button(frame1, text="=", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=2)
 button.bind("<Button-1>", click)
 
@@ -97,33 +97,24 @@ button = Button(frame1, text="1", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="*", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-
-frame1.pack()
-frame1 = Frame(window, background="#3b403e")
-
-button = Button(frame1, text=".", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="0", padx=18, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
 button = Button(frame1, text="+", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
 
-
-
 frame1.pack()
 frame1 = Frame(window, background="#3b403e")
 
-button = Button(frame1, text="/", padx=14, pady=9, font="lucida 35 bold")
+
+button = Button(frame1, text=".", padx=21, pady=10, font="lucida 35 bold")
+button.pack(side=LEFT, padx=9, pady=3)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="0", padx=14, pady=9, font="lucida 35 bold")
+button.pack(side=LEFT, padx=9, pady=3)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="*", padx=17, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
@@ -132,21 +123,19 @@ button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
 
+frame1.pack()
+frame1 = Frame(window, background="#3b403e")
+
+
+button = Button(frame1, text="/", padx=14, pady=9, font="lucida 35 bold")
+button.pack(side=LEFT, padx=9, pady=3)
+button.bind("<Button-1>", click)
 
 button = Button(frame1, text="-", padx=14, pady=11, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
 frame1.pack()
-frame1 = Frame(window, background="#3b403e")
-
-
-
-
-
-
-
-frame1.pack()
-
+window.configure(bg="#000")
 window.mainloop()
 print("hai")
