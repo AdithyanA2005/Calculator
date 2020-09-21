@@ -48,41 +48,20 @@ screen.pack(fill=X, ipadx=8, pady=10, padx=10)
 # Adding a frame creating three butttons
 frame1 = Frame(window, background="#2f524e")
 
-button = Button(frame1, text="9", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="7", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=0)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="8", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="8", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="7", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="9", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="AC", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-
-frame1.pack()
-frame1 = Frame(window, background="#2f524e")
-
-
-button = Button(frame1, text="6", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="5", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3 )
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="4", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="=", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=2)
+button = Button(frame1, text="*", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
 
@@ -90,41 +69,20 @@ frame1.pack()
 frame1 = Frame(window, background="#2f524e")
 
 
-button = Button(frame1, text="3", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="4", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="2", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="5", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10 )
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="1", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="6", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="+", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-
-frame1.pack()
-frame1 = Frame(window, background="#2f524e")
-
-
-button = Button(frame1, text=".", padx=21, pady=10, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="0", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="*", padx=17, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
-button.bind("<Button-1>", click)
-
-button = Button(frame1, text="%", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="-", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
 
@@ -132,11 +90,50 @@ frame1.pack()
 frame1 = Frame(window, background="#2f524e")
 
 
-button = Button(frame1, text="/", padx=14, pady=9, font="lucida 35 bold")
-button.pack(side=LEFT, padx=9, pady=3)
+button = Button(frame1, text="1", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
 button.bind("<Button-1>", click)
 
-button = Button(frame1, text="-", padx=14, pady=11, font="lucida 35 bold")
+button = Button(frame1, text="2", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="3", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="+", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+
+frame1.pack()
+frame1 = Frame(window, background="#2f524e")
+
+
+button = Button(frame1, text=".", padx=40, pady=10, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="0", padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="=" , padx=40, pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+button = Button(frame1, text="/", padx=40,
+ pady=9, font="lucida 30 bold")
+button.pack(side=LEFT, padx=9, pady=10)
+button.bind("<Button-1>", click)
+
+
+frame1.pack()
+frame1 = Frame(window, background="#2f524e")
+
+
+button = Button(frame1, text="", padx=14, pady=9, font="lucida 35 bold")
 button.pack(side=LEFT, padx=9, pady=3)
 button.bind("<Button-1>", click)
 
