@@ -20,9 +20,7 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(50)
         self.calcDisplay.setFont(font)
-        self.calcDisplay.setStyleSheet("background-color: white;\n"
-"font: 20pt \"MS UI Gothic\";\n"
-"")
+        self.calcDisplay.setStyleSheet("background-color: white;\n""font: 20pt \"MS UI Gothic\";\n""")
         self.calcDisplay.setLineWrapColumnOrWidth(1)
         self.calcDisplay.setReadOnly(False)
         self.calcDisplay.setAcceptRichText(True)
@@ -160,8 +158,25 @@ class Ui_MainWindow(object):
         self.btnPercent.setObjectName("btnPercent")
         MainWindow.setCentralWidget(self.centralwidget)
 
+
+        #Connect buttons
+        self.btn0.clicked.connect(self.digit_pressed)
+        self.btn1.clicked.connect(self.digit_pressed)
+        self.btn2.clicked.connect(self.digit_pressed)
+        self.btn3.clicked.connect(self.digit_pressed)
+        self.btn4.clicked.connect(self.digit_pressed)
+        self.btn5.clicked.connect(self.digit_pressed)
+        self.btn6.clicked.connect(self.digit_pressed)
+        self.btn7.clicked.connect(self.digit_pressed)
+        self.btn8.clicked.connect(self.digit_pressed)
+        self.btn9.clicked.connect(self.digit_pressed)
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def digit_pressed(self):
+        print("hemll")
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -192,13 +207,3 @@ class Ui_MainWindow(object):
         self.btnBack.setText(_translate("MainWindow", "←"))
         self.btnMult.setText(_translate("MainWindow", "×"))
         self.btnPercent.setText(_translate("MainWindow", "%"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
