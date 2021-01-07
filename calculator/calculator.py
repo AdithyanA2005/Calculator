@@ -2,19 +2,7 @@ from PyQt5 import QtWidgets
 from calculator.gui import Ui_MainWindow
 
 class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
-
-    firstNum = None
-    zeroDivision = False
-    resultDisplayed = False
-    multiple_operations = False
-    multiple_operations_times = 0
-
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)  # Ui == Ui_Calculator
-        self.show()
-
-        #Connect buttons
+    def initialise (self):
         self.btn0.clicked.connect(self.digit_pressed)
         self.btn1.clicked.connect(self.digit_pressed)
         self.btn2.clicked.connect(self.digit_pressed)

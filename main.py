@@ -6,13 +6,9 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     calculator = CalculatorWindow()
+    ui = CalculatorWindow()
+    ui.setupUi(calculator)
+    ui.initialise()
     calculator.show()
-    # MainWa]indow = QtWidgets.QMainWindow()
-    # ui = CalculatorWindow()
-    # ui.setupUi(calculator)
-    # calculator.show()
     sys.exit(app.exec_())
-	# MainWindow = QtWidgets.QMainWindow()
-    # ui = Ui_MainWindow()
-    # ui.setupUi(MainWindow)
-    # MainWindow.show()
+    
