@@ -12,6 +12,7 @@ _WELCOME BACK_
 > You can clone this repository by pasting the below code to your computers terminal 
 >
 > ```git clone https://github.com/AdithyanA2005/Calculator.git```
+> ![Cat Generator Screenshot](https://github.com/AdithyanA2005/JS_Simple_Programs/blob/main/01-Cat_Generator/github/snapshot.png)
 
 ***
 > In this repository the main runnable file that is needed to be runned is [main.py](https://github.com/AdithyanA2005/Calculator/blob/main/main.py) \
