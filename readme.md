@@ -13,7 +13,8 @@ _WELCOME BACK_
 >
 > ```git clone https://github.com/AdithyanA2005/Calculator.git```
 > 
-> ![Screenshot](> ![Cat Generator Screenshot](https://github.com/AdithyanA2005/JS_Simple_Programs/blob/main/01-Cat_Generator/github/snapshot.png))
+>
+> ![Screenshot](https://github.com/AdithyanA2005/JS_Simple_Programs/blob/main/01-Cat_Generator/github/snapshot.png)
 
 ***
 > In this repository the main runnable file that is needed to be runned is [main.py](https://github.com/AdithyanA2005/Calculator/blob/main/main.py) \
