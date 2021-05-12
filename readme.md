@@ -14,7 +14,7 @@ _WELCOME BACK_
 > ```git clone https://github.com/AdithyanA2005/Calculator.git```
 > 
 >
-> ![Screenshot](https://github.com/AdithyanA2005/JS_Simple_Programs/blob/main/01-Cat_Generator/github/snapshot.png)
+> ![Screenshot](https://github.com/AdithyanA2005/Calculator_PyQT5/blob/main/calculator/lib/Screenshot.png)
 
 ***
 > In this repository the main runnable file that is needed to be runned is [main.py](https://github.com/AdithyanA2005/Calculator/blob/main/main.py) \
